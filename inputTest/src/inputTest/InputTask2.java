@@ -17,6 +17,7 @@ public class InputTask2 {
 	   str1 = sc.next();
 	   str2 = sc.next();
 	   str3 = sc.next();
+	   sc.close(); // 중요! 나중에 시험으로 나옴!
 	   
 	 num1 = Integer.parseInt(str1);
 	 num2 = Integer.parseInt(str2);
@@ -26,7 +27,5 @@ public class InputTask2 {
 	 System.out.printf(resultMessage, num1, num2, num3, result);
 	   
 	   
-		
-		
 	}
 }
