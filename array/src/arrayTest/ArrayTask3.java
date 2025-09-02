@@ -2,103 +2,64 @@ package arrayTest;
 
 public class ArrayTask3 {
 	public static void main(String[] args) {
-//      1. 1~20까지 짝수만 배열에 담고 배열안에 값에 모두 3을 더한 값으로 변경 후 출력하기
-
-//	   1. 짝수만 배열에 담는다.
-//	   2. 짝수를 담은 배열을 반복시킨다.
-//	   3. num[i]로 해당 값에 + 3을 한다.
-//     4. 그걸 result에 담는다.
-//	   5. 반복문에 안에서 출력한다. 
-		
-//		int[] num = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
-//		int result = 0;
-//		for (int i = 0; i < num.length; i++) {
-//			result = num[i] + 3;
-//			System.out.print(result + " ");
+//		1. 1~20까지 짝수만 배열에 담고 배열안에 값에 모두 3을 더한 값으로 변경 후 출력하기
+//		짝수: 값 % 2 == 0
+//		int[] arData1 = new int[10];
+//		for(int i = 0; i < 10; i++) {
+//			arData1[i] = (i + 1) * 2;
+////			arData1[i] = arData1[i] + 3;
+//			arData1[i] += 3;
+//			System.out.println(arData1[i]);
 //		}
 		
-//		int[] num = new int[10];
-//		for(int i = 0; i < num.length; i++) {
-//			num[i] = (i+1) *2;
-//			num[i] += 3;
-//			System.out.println(num[i]);
-//		}
-
-//      2. 초기값으로 10, 20, 30, 40, 50 값을 넣고 평균을 출력하기
-
-//		1. 값을 알고 있으니 그걸 배열에 담는다.
-//		2. 배열에 담은걸 반복해서 누적합시켜 더한다.
-//		3. 다 더한걸 배열의 길이만큼 나누면 평균
-//		4. 출력한다.
-//		int[] num = { 10, 20, 30, 40, 50 };
-//		int sum = 0;
+//		2. 초기값으로 10, 20, 30, 40, 50 값을 넣고 평균을 출력하기
+//		int[] arData2 = {10, 20, 30, 40, 56};
 //		double average = 0.0;
-//
-//		for (int i = 0; i < num.length; i++) {
-//			sum += num[i];
-//		}
-//
-//		average = (double) sum / num.length;
-//
-//		System.out.println(average);
-
-//      3. 1~10까지 배열에 담고 값이 5보다 크다면 값을 2배로 변경해서 출력하기 
-
-//		1. 1~10까지 배열에 담는다.
-//		int[] num = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-//		2. num의 배열의 길이만큼 반복문을 만든다.
-//		3. 값이 만약 5보다 크다면 값을 2배로 만드는 식을 만든다.
-//		4. 그걸 num[i]에 다시 담는다.
-//		5. 다시 반복문을 만들어서 반복문 안에서 " "문자열을 붙여서 출력한다.
-//		for(int i = 0; i < num.length; i++) {
-//			if(num[i] > 5) {
-//			  num[i] = num[i] * 2;
-//			}
-//		}
-//		for (int i = 0; i < num.length; i++) {
-//            System.out.print(num[i] + " ");
-//		}
-		
-		
-
-//      4. 1~10까지 배열에 담고, 모든 값에 *을 붙여서 출력하기 1*2*3*4*...10 
-//      단 마지막은 *이 붙지 않는다
-//		1. 1~10까지 배열에 담고
-//		int[] num = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-//		2. num의 배열의 길이만큼 반복문을 돌리는 식을 만든다.
-//		3. 모든값에 *를 붙인다 그냥*는 곱하기가 되니 문자열"*"로 붙이고
-//		4. 그걸 다시 num[i]에 담는다.
-//		5. 마지막 값에는 붙이지 않기로 했으니 num[i] == 10이면 붙이지 않는다.
-//		6. 반복문을 돌리고 반복문 안에서출력한다.
-//		for (int i = 0; i < num.length; i++) {
-//			if (i < num.length - 1) {
-//				System.out.print(num[i] + "*");
-//			} else {
-//				System.out.print(num[i]); // 마지막은 * 안 붙이기
-//			}
-//		}
-
-//      5. 1~10까지 배열에 담고 들어간 값 중 3의 배수만 모두 더해서 출력하기 
-//		1. 1~10까지 배열에 담는다.
-//		int[] num = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-//		int sum = 0;
-
-//		2. 배열에 길이만큼 반복문을 돌린다.
-//		3. 3의 배수만 모두 더해서 출력하라고 했으니 반복문을 돌리고
-//		4. 만약에 num[i]를 % 나머지 연산자를 이용해서 3으로 나눴을때 나머지가 == 0이면 3의 배수이다.
-//		5. 3의 배수를 구했으면 그걸 모두 더한다 누적복합 연산자로 더한다.
-//		6. 더한 값을 담을 저장공간을 상단에 선언한다.
-//		7. 선언한 sum에 num[i]를 저장하고
-//		8. 그걸 출력한다.
-//		for(int i = 0; i < num.length; i++) {
-//			if(num[i] % 3 == 0) {
-//				sum += num[i];
-//			}
+//		for(int i = 1; i < arData2.length; i++) {
+//			arData2[0] += arData2[i];
 //		}
 //		
-//			System.out.println(sum);
-
+//		average = arData2[0] / (double)arData2.length;
+//		System.out.println(average);
+		
+//		3. 1~10까지 배열에 담고 값이 5보다 크다면 값을 2배로 변경해서 출력하기
+		int[] arData3 = new int[10];
+		for(int i = 0; i < arData3.length; i++) {
+			arData3[i] = i + 1;
+			int value = arData3[i] > 5 ? arData3[i] * 2 : arData3[i];
+			System.out.println(value);
+		}
+		
+//		4. 1~10까지 배열에 담고, 모든 값에 *을 붙여서 출력하기 1*2*3*4*...10 
+//		단 마지막은 *이 붙지 않는다
+		int[] arData4 = new int[10];
+		for(int i = 0; i < arData4.length; i++) {
+			arData4[i] = i + 1;
+			System.out.print(arData4[i]);
+			if(i != arData4.length - 1) {
+				System.out.print("*");
+			}
+		}
+		
+		System.out.println("");
+//		5. 1~10까지 배열에 담고 들어간 값 중 3의 배수만 모두 더해서 출력하기 
+		int[] arData5 = new int[10];
+		for(int i = 0; i < arData5.length; i++) {
+			arData5[i] = i + 1;
+			if(arData5[i] % 3 == 0) {
+				System.out.println(arData5[i]);
+			}
+		}
+		
 	}
 }
+
+
+
+
+
+
+
+
+
+

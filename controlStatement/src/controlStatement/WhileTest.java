@@ -5,13 +5,18 @@ import java.util.Scanner;
 public class WhileTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String message = "MBTI를 입력하세요.\nex)ENFP", mbti = null;
-
-		while (true) {
+		String message = "MBTI를 입력하세요.\nex)ENFP\n종료 입력: EXIT", mbti = null;
+		
+		while(true) {
 			System.out.println(message);
 			mbti = sc.next();
-
-			switch (mbti) {
+			
+			if(mbti.equals("EXIT")) { 
+				System.out.println("종료합니다.(❁´◡`❁)");
+				break;
+			}
+			
+			switch(mbti) {
 			case "ENFP":
 				System.out.println("게으름 노답!");
 				break;
