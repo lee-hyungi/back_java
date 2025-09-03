@@ -72,7 +72,7 @@ public class MailTest {
 	         Multipart mParts = new MimeMultipart();
 	         MimeBodyPart mTextPart = new MimeBodyPart();
 	         MimeBodyPart mFilePart = null;
-	//    
+	    
 //	         // 메일 콘텐츠 - 내용
 	         mTextPart.setText(html, bodyEncoding, "html");
 	         mParts.addBodyPart(mTextPart);
