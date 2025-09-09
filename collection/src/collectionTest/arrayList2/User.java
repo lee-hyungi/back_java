@@ -45,7 +45,7 @@ public class User {
       this.phone = phone;
    }
    
-//   5. toString
+//   5. toString 재정의
    @Override
    public String toString() {
       return "User [id=" + id + ", name=" + name + ", password=" + password + ", phone=" + phone + "]";
@@ -55,7 +55,7 @@ public class User {
       return Objects.hash(id);
    }
    
-//   6. hashcode, equals
+//   6. hashcode, equals 재정의
    @Override
    public boolean equals(Object obj) {
       if (this == obj)
