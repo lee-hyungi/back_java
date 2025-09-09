@@ -10,10 +10,10 @@ import java.net.Socket;
 public class Client {
     // 포트번호 7777
     // 192.168.5.12 내꺼
-//	192.168.5.254
+//	192.168.5.254 강사님
     public static void main(String[] args) {
         String name = "";
-        String ip = "192.168.5.254";
+        String ip = "192.168.5.12";
 
         try (
                 Socket socket = new Socket(ip, 7777);

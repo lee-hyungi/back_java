@@ -16,6 +16,7 @@ public class Client01 {
 
 		String serverIp = "192.168.5.12";
 		String message = null;
+		
 		try {
 			socket = new Socket(serverIp, 1300);
 			System.out.println("서버에 연결 되었습니다.");

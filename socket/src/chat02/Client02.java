@@ -19,9 +19,9 @@ public class Client02 {
 		BufferedWriter out = null;
 		Scanner sc = new Scanner(System.in);
 
-//		"localhost"
+//		"localhost" = "192.168.5.12"
 		try {
-			socket = new Socket("localhost", 7777);
+			socket = new Socket("192.168.5.12", 7777);
 
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));

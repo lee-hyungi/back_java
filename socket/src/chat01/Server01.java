@@ -11,14 +11,15 @@ public class Server01 {
       
 //      서버 소켓
       ServerSocket serverSocket = null;
+
 //      클라이언트 소켓
       Socket socket = null;
-      
+
 //      입력 스트림을 읽기 위한 BufferedReader
       BufferedReader reader = null;
-      
+ 
       String message = null; 
-      
+
       try {
          serverSocket = new ServerSocket(1300);
          System.out.println("서버가 시작되었습니다. 클라이언트를 기다리는 중...");
